@@ -637,7 +637,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    transition: all 0.15s ease-out;
+    transition: all 0.25s ease-out;
 
     .red-theme & {
         background: rgb(9, 46, 110);
@@ -656,6 +656,7 @@ body {
     color: #fff; /* White text */
     padding: 40px 20px;
     font-family: Arial, sans-serif;
+    transition: all 0.25s ease-out;
 
     .red-theme & {
         background: rgb(0, 120, 60);
