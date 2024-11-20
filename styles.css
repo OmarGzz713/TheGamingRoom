@@ -61,6 +61,7 @@ body {
 
 .logo-uhgeekdom {
     color: white;
+    /*text-transform: uppercase;*/
     font-size: 1.2em;
     width: 5.2em;
     letter-spacing: 0.1em;
@@ -73,7 +74,7 @@ body {
     margin-right: 0.5em;
 }
 
-#themeController {
+#theme-controller {
     width: 35px;
     height: 35px;
     cursor: pointer;
@@ -83,12 +84,13 @@ body {
     font-size: 36px;
     transition: all 0.25s ease-out;
 
+
     .red-theme & {
         color: rgb(9, 46, 110);
     }
 }
 
-#themeController:hover {
+#theme-controller:hover {
     filter: brightness(0.8);
 }
 
@@ -382,6 +384,7 @@ body {
     transform: translateY(-3%);
     background: rgba(198, 14, 59, 0.7);
     box-shadow: 0 0 0.6em white;
+    transition: all 0.15s ease-out;
 
     .red-theme & {
         background: rgba(9, 46, 110, 0.7);
@@ -435,7 +438,7 @@ body {
     transition: all 0.25s ease-out;
 
     .red-theme & {
-        color:rgb(198, 14, 59);
+        color: rgb(198, 14, 59);
     }
 }
 
@@ -545,7 +548,7 @@ body {
 }
 
 .layer-4-bg {
-    background-color: rgb(0, 120, 60);
+    background-color: rgb(198, 14, 59);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -553,7 +556,7 @@ body {
     transition: all 0.25s ease-out;
 
     .red-theme & {
-        background-color: rgb(119, 188, 31);
+        background-color: rgb(9, 46, 110);
     }
 
 }
@@ -568,6 +571,7 @@ body {
     justify-content: space-evenly;
     margin: 0 2em;
     transition: all 0.25s ease-out;
+
 
     .red-theme & {
         background: rgb(198, 14, 59);
@@ -637,7 +641,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    transition: all 0.25s ease-out;
+    transition: all 0.15s ease-out;
 
     .red-theme & {
         background: rgb(9, 46, 110);
@@ -656,7 +660,6 @@ body {
     color: #fff; /* White text */
     padding: 40px 20px;
     font-family: Arial, sans-serif;
-    transition: all 0.25s ease-out;
 
     .red-theme & {
         background: rgb(0, 120, 60);
@@ -696,7 +699,7 @@ body {
 
 .sitemap a {
     text-decoration: none;
-    color: rgb(9, 46, 110);
+    color: #00c4cc;
     transition: color 0.3s ease;
 }
 
@@ -742,11 +745,7 @@ body {
 }
 
 .email-signup button:hover {
-    background-color: rgba(198, 14, 59, 0.9);
-
-    .red-theme & {
-        background-color: rgba(9, 46, 110, 0.9);
-    }
+    background-color: #ffdd57;
 }
 
 .footer-bottom {
@@ -887,5 +886,3 @@ body {
         }
     }
 }
-
-
