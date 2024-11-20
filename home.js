@@ -1,10 +1,6 @@
-document.getElementById('themeController').addEventListener('click', function(){
+document.getElementById('theme-controller').addEventListener('click', function(){
     document.body.classList.toggle('red-theme');
 });
-
-function themeController() {
-
-}
 
 const menuBtn = document.querySelector('.right-bar-menu')
 let menuOpen = false;
@@ -23,18 +19,18 @@ menuBtn.addEventListener('click', () => {
 });
 
 const dropDown = document.querySelector(".dropdown-content");
-function s() {
+function show() {
     dropDown.style.display = "flex";
 }
 
-function c() {
+function hide() {
     dropDown.style.display = "none";
 }
 
-function showOrHide() {
+function projectDisplay() {
     if (dropDown.style.display === "none") {
-        s()
+        show()
     } else {
-        c()
+        hide()
     }
 }
