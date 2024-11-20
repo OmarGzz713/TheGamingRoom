@@ -32,7 +32,7 @@ body {
     transition: all 0.25s ease-out;
 
     .red-theme & {
-        background-color: rgba(198, 14, 59, 0.9)
+        background-color: rgba(198, 14, 59, 0.9);
     }
 }
 
