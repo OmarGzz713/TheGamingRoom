@@ -706,17 +706,20 @@ body {
     color: #ffdd57;
 }
 
-.social-icons img {
-    width: 30px;
+.social-icons svg{
+    width: 2em;
     margin-right: 10px;
     transition: transform 0.3s ease;
-
+    text-decoration: none;
 }
 
-.social-icons img:hover {
-    transform: scale(1.2); /* Enlarge on hover */
+.social-icons svg:hover {
+    transform: scale(1.1); /* Enlarge on hover */
 }
 
+.social-icons a {
+    text-decoration: none;
+}
 .email-signup {
     display: flex;
     flex-direction: column;
