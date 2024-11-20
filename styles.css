@@ -698,7 +698,7 @@ body {
 
 .sitemap a {
     text-decoration: none;
-    color: #00c4cc;
+    color: rgb(9, 46, 110);
     transition: color 0.3s ease;
 }
 
