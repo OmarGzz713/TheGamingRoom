@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omar's Site</title>
+    <link rel="stylesheet" href="omar.css">
+</head>
+<body>
+    <header>
+        <h1>About Omar</h1>
+    </header>
+
+    <section class="intro">
+        <div class="text">
+            <p>Hello, my name is Omar, and I am a computer science student at UHD. I currently love to play video games and recently have found going to the gym as something new I enjoy doing. I am striving to work in Web Development and want to work particularly in React.JS, in front-end development. I hope to also be able to work in full-stack but first, I would prefer to focus on the front end when I join the workforce. I love video games and maybe I would love to work on video games as a hobby after I am done with school. As shown in the picture, I love animals, and that cat is a friend’s silly cat cleaning himself in a funny way and luckily, I was able to take the picture. His name is Dracula, and obviously, he is cool and clingy. I currently take care of my dog, and she is quite old but somehow seems to have at some point gone into Ra's al Ghul Lazarus pit and can rejuvenate every day. Hopefully, you were able to learn a little about me, wasn’t sure what to link about myself so here’s my <a href="https://open.spotify.com/user/7g7pnrbrepl8vbzzq210rfjql?si=bdb0f98bbd0b4f41">Spotify profile</a> to see what I am listening to! Thank you for visiting my website.</p>
+        </div>
+    </section>
+
+    <section class="image-section">
+        <img src="IMG_2834.JPG" alt="Funny picture of my friend cleaning licking himself" width="500" height="500">
+    </section>
+
+    <section class="spotify">
+        <p>Here is my <a href="https://open.spotify.com/user/7g7pnrbrepl8vbzzq210rfjql?si=bdb0f98bbd0b4f41">Spotify profile</a> to see what I am listening to!</p>
+    </section>
+
+    <footer>
+        <p>Background Image Credit: <a href="https://images.app.goo.gl/fZXet6WZBgNSo48Z7">One Piece Background</a></p>
+    </footer>
+    
+    <script>
+        let animationEnabled = true;
+        document.getElementById("toggle-animation").onclick = function() {
+            if (animationEnabled) {
+                document.body.style.animation = "none";
+            } else {
+                document.body.style.animation = "pixelate 10s infinite alternate";
+            }
+            animationEnabled = !animationEnabled;
+        };
+    </script>
+</body>
+</html>

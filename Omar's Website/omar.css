@@ -1,0 +1,111 @@
+/* Body styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Use min-height instead of height */
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background overlay */
+    position: relative; /* Positioning for overlay */
+    text-align: center;
+    padding: 10px 20px 0; /* Add top padding to avoid being hidden under the URL bar */
+    box-sizing: border-box; /* Ensure padding doesn't exceed the viewport */
+}
+
+/* Background image styling with dark overlay */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('onepiecebackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; /* Make the image less intense */
+    z-index: -1; /* Ensure the overlay is behind the content */
+    animation: pixelate 5s infinite; /* Apply pixelation animation */
+    image-rendering: pixelated; /* Use this for pixelation effect */
+}
+
+/* Pixelation animation */
+@keyframes pixelate {
+    0% { 
+        transform: scale(1.5); /* Start with a larger image */
+    }
+    50% { 
+        transform: scale(2); /* Zoom in to create larger "pixels" */
+    }
+    100% { 
+        transform: scale(1.5); /* Return to initial state */
+    }
+}
+
+/* Header styles */
+header {
+    padding: 20px 0;
+    width: 100%; /* Ensures the header takes full width */
+    box-sizing: border-box;
+}
+
+/* Main title styling */
+h1 {
+    font-size: 3em;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Intro section */
+.intro .text {
+    font-size: 1.2em;
+    margin-top: 20px;
+    width: 100%; /* Ensures the intro section takes full width */
+    max-width: 900px; /* Limits width for large screens */
+    margin: 0 auto; /* Centers the section */
+}
+
+/* Image Section */
+.image-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Spotify section */
+.spotify {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.spotify a {
+    font-size: 1.5em;
+    color: #1DB954; /* Spotify's signature green */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer styles */
+footer {
+    background-color: #222;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 60px 10px 0; /* Ensure consistent padding for smaller screens */
+    }
+    
+    header h1 {
+        font-size: 2em; /* Reduce header size on smaller screens */
+    }
+}
